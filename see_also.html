@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lab2 Coffee Page by Anush</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/16d54be021.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Coffee</a>
+    <a href="section1.html">Types</a>
+    <a href="section3.html">Recipes</a>
+    <a class="active" href="see_also.html">See Also</a>
+    <a href="references.html">References</a>
+
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+  <!-- Page content -->
+
+  <div class="content">
+    <h2><i>Artful Touch</i></h2>
+    <p>You may as well wish to surprise your friends and family with beautiful<br>
+      foam design by following this short video tutorial.
+    </p>
+    <input type="text" name="search" placeholder="Search...">
+    <i class="fas fa-search-location"></i>
+  </div>
+
+
+  <!-- The video -->
+
+  <video autoplay muted loop id="myVideo" height="400">
+    <source src="Coffee-video/mixkit-latte-art-4mb.mp4" type="video/mp4">
+  </video>
+  <!-- Optional: some overlay text to describe the video -->
+
+  <div class="content">
+
+    <p>Treat yourself with some love.<br>
+      Learn how to make the simplest pattern.<br>
+      Press "Pause/Play" button for your convenience.</p>
+
+    <!--Use a button to pause/play the video with JavaScript-->
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+  </div>
+
+  <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+  </script>
+
+
+
+  <div id="overlay" onclick="off()">
+    <div id="text">I should try this myself :)</div>
+  </div>
+
+  <div style="padding:20px">
+    <h2>Click on Me</h2>
+    <button onclick="on()">Turn on overlay effect</button>
+  </div>
+
+  </div>
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
